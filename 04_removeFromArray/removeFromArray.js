@@ -1,14 +1,10 @@
-const removeFromArray = function(array=[], ...number) {
-    let length = array.length
-    let pom=[];
-    let licznik=0;
-    for(let i=0; i<length; i++){
-        if(array[i]!=number){
-            pom[licznik]=array[i];
-            licznik++;
+const removeFromArray = function(array=[], ...args) {
+    for(arg of args){
+        while(array.includes(arg)){
+            array.splice(array.indexOf(arg),1);
         }
     }
-    return pom;
+    return array;
 };
 
 // Do not edit below this line
