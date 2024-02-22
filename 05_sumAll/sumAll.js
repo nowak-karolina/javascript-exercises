@@ -11,10 +11,8 @@ const sumAll = function(number1, number2) {
     }
 
     let sum=0;
-    let range;
-    range=Math.abs(pom2-pom1)+1;
 
-    for(let i=pom1; i<=range; i++){
+    for(let i=pom1; i<=pom2; i++){
         sum+=i;
         //console.log(sum);
     }
